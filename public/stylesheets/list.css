@@ -1,0 +1,444 @@
+.circle-green,
+.circle-red,
+.circle-blue,
+.circle-yellow {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    border-radius: 100%;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: 700;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 30px;
+    margin: 10px;
+    place-self: center;
+    background-clip: padding-box;
+    border: solid 15px rgba(0, 0, 0, 0);
+}
+
+topb > b {
+    background: #8800ff;
+    border-radius: 4px;
+    width: 100%;
+    grid-row: 1 / 2;
+    height: 70px;
+    place-self: center;
+
+
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    line-height: 70px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+topb>b[data-button="left"] {
+    grid-column: 2 / 3;
+}
+topb>b[data-button="right"] {
+    grid-column: 7 / 8;
+}
+
+dpad>b>i.left,
+dpad>b>i.right,
+dpad>b>i.up,
+dpad>b>i.down {
+    width: 70px;
+    place-self: center;
+    display: inline-block;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+i.left {
+    background-image: url("/images/icons/left.svg");
+}
+
+i.right {
+    background-image: url("/images/icons/right.svg");
+}
+
+i.up {
+    background-image: url("/images/icons/up.svg");
+}
+
+i.down {
+    background-image: url("/images/icons/down.svg");
+}
+
+#controller {
+    display: none;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+}
+
+actions {
+    grid-template-columns: 1fr 12% 1fr;
+    grid-template-rows: 1fr 12% 1fr;
+    display: grid;
+    grid-row: 2 / 6;
+    grid-column: 6 / 9;
+}
+
+
+
+dpad {
+    grid-template-columns: 1fr 12% 1fr;
+    grid-template-rows: 1fr 12% 1fr;
+    display: grid;
+    grid-row: 2 / 6;
+    grid-column: 1 / 4;
+}
+
+
+dpad>b,
+actions>b {
+    color: #fff;
+ 
+    line-height: 100px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    background-color: #444;
+    border-radius: 100%;
+    display: inline-grid;
+}
+
+b[data-button="select"]>span,
+b[data-button="start"]>span {
+    grid-row: 2 / 3;
+    display: inline-grid;
+    grid-column: 1 / 2;
+}
+
+i.start,
+i.select {
+    display: inline-grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 20px;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    height: 70px;
+    background: #8800ff;
+    align-self: center;
+    justify-self: center;
+}
+
+b[data-button="start"] {
+    align-self: center;
+    justify-self: center;
+    grid-row: 3 / 5;
+    grid-template-rows: 90% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 5 / 6;
+}
+
+b[data-button="select"] {
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: 90% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 3 / 5;
+    grid-column: 4 / 5;
+}
+
+dpad > b[data-button="left"], actions > b[data-button="left"] {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: end;
+}
+
+dpad > b[data-button="up"], actions > b[data-button="up"] {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: end;
+    justify-self: center;
+}
+
+dpad > b[data-button="right"], actions > b[data-button="right"] {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: start;
+}
+
+dpad > b[data-button="down"], actions > b[data-button="down"] {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    align-self: startaa;
+    justify-self: center;
+}
+
+actions>b[data-button="left"] {
+    background-color: #00b155;
+}
+
+actions>b[data-button="up"] {
+    background-color: #006abc;
+}
+
+actions>b[data-button="right"] {
+    background-color: #b12600;
+}
+
+actions>b[data-button="down"] {
+    background-color: #a6a200;
+}
+
+topb>#button-back {
+    display: inline-grid;
+    width: 50%;
+    justify-self: start;
+    align-self: center;
+    height: 50%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+topb {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+}
+
+#list {
+    transition: opacity 0.25s;
+    opacity: 1;
+    color: #333;
+    text-align: center;
+    font-size: 16pt;
+}
+
+#list.hidden {
+    opacity: 0;
+}
+
+.circle-green.disable,
+.circle-red.disable,
+.circle-blue.disable,
+.circle-yellow.disable,
+.circle-green.disable.selected,
+.circle-red.disable.selected,
+.circle-blue.disable.selected,
+.circle-yellow.disable.selected {
+    background-color: #ccc;
+    color: #eee;
+    border: solid 15px rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    background-color: #f7eeff;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+    .controller {
+        width: 90vw;
+        height: 40vw;
+    }
+    cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    button#button-play {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    .circle-yellow {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .circle-green {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .circle-red {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .circle-blue {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+    .controller {
+        width: 20vw;
+        height: 10vw;
+    }
+    cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    button#button-play {
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+    .circle-yellow {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .circle-green {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .circle-red {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .circle-blue {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media screen and (min-device-width: 1025px) {
+    .controller {
+        width: 20vw;
+        height: 10vw;
+    }
+    cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    button#button-play {
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+    .circle-yellow {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .circle-green {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .circle-red {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .circle-blue {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+.controller {
+    background-image: url("/images/icons/controller.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+}
+
+cards {
+    display: grid;
+}
+button {
+    background-color: #80f;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    place-self: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 2px 4px rgba(0, 0, 0, .12);
+    font-weight: 700;
+    outline: none;
+}
+button#button-play {
+    height: 60px;
+    width: 340px;
+
+}
+button#button-back{
+    margin-left: 10px;
+}
+button:hover {
+    outline: none;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, .12), 0 3px 6px rgba(0, 0, 0, .08)
+}
+
+button:active {
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, .2);
+}
+
+card {
+    box-shadow: 0px 0px 40px rgba(10, 10, 50, 0.5);
+    padding: 4px;
+    width: 110px;
+    padding: 110px;
+    height: 50px;
+    margin: 4px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.circle-yellow {
+    background-color: #a6a200;
+}
+
+.circle-green {
+    background-color: #00b155;
+}
+
+.circle-red {
+    background-color: #b12600;
+}
+
+.circle-blue {
+    background-color: #006abc;
+}
+
+.circle-green.selected {
+    border: double 15px #00b155;
+}
+
+.circle-red.selected {
+    border: double 15px #b12600;
+}
+
+.circle-blue.selected {
+    border: double 15px #006abc;
+}
+
+.circle-yellow.selected {
+    border: double 15px #a6a200;
+}

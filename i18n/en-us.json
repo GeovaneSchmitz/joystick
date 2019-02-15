@@ -1,0 +1,11 @@
+{
+    "WELCOME_MSG": "Welcome!",
+    "CHOOSECONTROLLER_MSG": "Please Choose Your Joystick",
+    "CHOOSECONTROLLER_TITLE": "Choose your Joystick - Joystick GMS",
+    "CHOOSECONTROLLER_BUTTON": "PLAY",
+    "BACK_BUTTON": "Back",
+    "SELECT_BUTTON": "Select",
+    "START_BUTTON": "Start",
+    "LEFT_BUTTON": "L",
+    "RIGHT_BUTTON": "R"
+}

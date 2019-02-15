@@ -1,0 +1,59 @@
+{
+    "1":{
+        "dpad-up":"w",
+        "dpad-down":"s",
+        "dpad-left":"a",
+        "dpad-right":"d",
+        "start":"1",
+        "select":"2",
+        "A":"t",
+        "B":"g",
+        "X":"r",
+        "Y":"f",
+        "left": "q",
+        "right":"e"
+    },
+    "2":{
+        "dpad-up":"3",
+        "dpad-down":"4",
+        "dpad-left":"5",
+        "dpad-right":"6",
+        "start":"7",
+        "select":"8",
+        "A":"9",
+        "B":"0",
+        "X":"-",
+        "Y":"=",
+        "left":"z",
+        "right":"x"
+    },
+    "3":{
+        "dpad-up":"c",
+        "dpad-down":"v",
+        "dpad-left":"b",
+        "dpad-right":"n",
+        "start":"m",
+        "select":",",
+        "A":".",
+        "B":";",
+        "X":"h",
+        "Y":"j",
+        "left": "k",
+        "right":"l"
+    },
+    "4":{
+        "dpad-up":"ç",
+        "dpad-down":"y",
+        "dpad-left":"u",
+        "dpad-right":"i",
+        "start":"o",
+        "select":"p",
+        "A":"[",
+        "B":"]",
+        "X":"'",
+        "Y":"/",
+        "left": "+",
+        "right":"*"
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ translation.CHOOSECONTROLLER_TITLE }}</title>
+  <link rel='stylesheet' href='/stylesheets/list.css' />
+  <script src="/socket.io/socket.io.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script type="text/javascript" src="/javascripts/list.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(function (error) {
+          console.log('Service worker registration failed, error:', error);
+        });
+    }</script>
+  <script type="text/javascript" src="/javascripts/controller.js"></script>
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+  <div id="list">
+    <i class="controller"></i>
+    <p>{{ translation.CHOOSECONTROLLER_MSG }}</p>
+
+    <cards>
+      <i class="circle-red disable" data-controller="1">1</i>
+      <i class="circle-blue disable" data-controller="2">2</i>
+      <i class="circle-yellow disable" data-controller="3">3</i>
+      <i class="circle-green disable" data-controller="4">4</i>
+      <button id="button-play">{{ translation.CHOOSECONTROLLER_BUTTON }}</button>
+    </cards>
+  </div>
+  <div id="controller">
+    <topb>
+      <button id="button-back" onclick="location.reload()">
+        {{ translation.BACK_BUTTON}}</button>
+      <b data-key="left" data-button="left">
+        {{ translation.LEFT_BUTTON}}
+
+        <i class="left">
+
+        </i>
+      </b>
+      <b data-key="right" data-button="right">
+        {{ translation.RIGHT_BUTTON}}
+
+        <i class="right">
+
+        </i>
+      </b>
+    </topb>
+    <dpad>
+      <b data-key="dpad-left" data-button="left"><i class="left"></i></b>
+      <b data-key="dpad-up" data-button="up"><i class="up"></i></b>
+      <b data-key="dpad-right" data-button="right"><i class="right"></i></b>
+      <b data-key="dpad-down" data-button="down"><i class="down"></i></b>
+    </dpad>
+    <b data-key="start" data-button="start">
+      <i class="start">
+      </i>
+      <span>
+        {{ translation.START_BUTTON}}
+      </span>
+    </b>
+    <b data-key="select" data-button="select">
+      <i class="select">
+      </i>
+      <span>
+        {{ translation.SELECT_BUTTON}}
+      </span>
+    </b>
+    <actions>
+      <b data-key="Y" data-button="left">Y</b>
+      <b data-key="X" data-button="up">X</b>
+      <b data-key="A" data-button="right">A</b>
+      <b data-key="B" data-button="down">B</b>
+    </actions>
+  </div>
+</body>
+
+</html>

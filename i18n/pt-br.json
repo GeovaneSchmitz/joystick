@@ -1,0 +1,11 @@
+{
+    "WELCOME_MSG": "Seja Bem-vindo!",
+    "CHOOSECONTROLLER_MSG": "Por Favor Escolha seu Controle",
+    "CHOOSECONTROLLER_TITLE": "Escolha seu controle - Joystick",
+    "CHOOSECONTROLLER_BUTTON": "JOGAR",
+    "BACK_BUTTON": "Voltar",
+    "SELECT_BUTTON": "Selecionar",
+    "START_BUTTON": "Iniciar",
+    "LEFT_BUTTON": "E",
+    "RIGHT_BUTTON": "D"
+}

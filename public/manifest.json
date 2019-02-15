@@ -1,0 +1,25 @@
+{
+    "name": "Joystick - GMS",
+    "short_name": "Joystick",
+    "start_url": ".",
+    "display": "fullscreen",
+    "background_color": "#fff",
+    "theme_color": "#2196F3",
+    "description": "",
+    "orientation": "landscape",
+
+    "icons": [{
+        "src": "images/icons/logo-48x48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      }, {
+        "src": "images/icons/logo-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }, {
+        "src": "images/icons/logo-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }]
+    
+  }
